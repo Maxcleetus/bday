@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons"; 
-import sound from "../assets/mp3/a.mp3";
+import sound from "../assets/mp3/b.mp3";
 import one from '../assets/photos/1.jpg'
 import two from '../assets/photos/2.jpg'
 import four from '../assets/photos/4.jpg'
@@ -16,6 +16,8 @@ import twl from '../assets/photos/12.jpg'
 import thit from '../assets/photos/13.jpg'
 import fort from '../assets/photos/14.jpg'
 import fift from '../assets/photos/15.jpg'
+import sixt from '../assets/photos/16.jpg'
+import sevett from '../assets/photos/17.jpg'
 const Home = () => {
     const [audio, setAudio] = useState(null);
     const [isPlay, setIsPlay] = useState(false);
@@ -54,22 +56,22 @@ const Home = () => {
             setIsPlay(!isPlay);
         }
     }
-    let img = [one,two,four,five,six,seven,eight,nine,ten,eleven,twl,thit,fort,fift]
+    let img = [one,two,four,five,six,seven,eight,nine,ten,eleven,twl,thit,fort,fift,sixt,sevett]
     return (
         <>
         <div>
             <div className="flex items-center justify-center p-7 text-violet-800 ">
                 <div className="flex items-center justify-center font-medium  text-violet-800 ">
-                    <h1>Happy B-day</h1>
+                    <h1 className="text-xl">Happy B-day💜Kuttizz </h1>
                 </div>
                 <button className="bg-violet-50 rounded-3xl px-4 py-2" onClick={statement}>
                     {isPlay ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}
                 </button>
             </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 sm:border-0 sm:gap-4  mx-6 p-2 h-[550px] rounded-lg overflow-y-scroll border-2 border-violet-800">
+        <div className="grid grid-cols-2 sm:grid-cols-4 sm:border-0 gap-2.5  mx-6 p-2 h-[550px] rounded-lg overflow-y-scroll border-2 border-violet-800">
             {img.map((item)=>(
-                    <img onClick={()=>working(item)} className=" cursor-pointer h-[300px] w-[180px] sm:h-[500px] sm:w-[300px] sm:rounded-2xl" src={item} alt="" /> 
+                    <img onClick={()=>working(item)} className=" cursor-pointer rounded-lg border-2 border-violet-800 h-[286px] w-[154px]  sm:h-[500px] sm:w-[300px] sm:rounded-2xl" src={item} alt="" /> 
             ))}
         </div>
         {work ? <div className="fixed top-0 bg-black/50 h-screen w-full flex items-center justify-center">
