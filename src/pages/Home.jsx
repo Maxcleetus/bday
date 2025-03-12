@@ -62,7 +62,7 @@ const Home = () => {
         <div>
             <div className="flex items-center justify-center p-7 text-violet-800 ">
                 <div className="flex items-center justify-center font-medium  text-violet-800 ">
-                    <h1 className="text-xl">Happy B-day💜Kuttizz </h1>
+                    <h1 className="text-2xl font-semibold">Happy B-day💜Kuttizz </h1>
                 </div>
                 <button className="bg-violet-50 rounded-3xl px-4 py-2" onClick={statement}>
                     {isPlay ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}
